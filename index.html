@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأمل كلين | شركة تنظيف ومكافحة حشرات بخميس مشيط</title>
+<meta name="description" content="الأمل كلين - أفضل شركة تنظيف شقق وفلل ومنازل ومجالس وسجاد وكنب وموكيت، ومكافحة حشرات وتنظيف وعزل خزانات وعزل أسطح بخميس مشيط. اتصل 0549265055">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+  --primary:#0891b2;
+  --primary-dark:#0e7490;
+  --secondary:#f59e0b;
+  --accent:#10b981;
+  --gold:#d4af37;
+  --dark:#0f172a;
+  --light:#f8fafc;
+  --gray:#64748b;
+  --gradient:linear-gradient(135deg,#0891b2 0%,#0e7490 50%,#065f73 100%);
+  --gradient-gold:linear-gradient(135deg,#f59e0b 0%,#d4af37 100%);
+  --gradient-hero:linear-gradient(135deg,#0c4a6e 0%,#0891b2 50%,#14b8a6 100%);
+  --shadow:0 10px 40px rgba(8,145,178,.15);
+  --shadow-hover:0 20px 60px rgba(8,145,178,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo','Tajawal',sans-serif;background:#fff;color:#1e293b;line-height:1.8;overflow-x:hidden}
+
+/* ===== Top Bar ===== */
+.topbar{background:var(--gradient);color:#fff;padding:10px 0;font-size:14px;position:relative;z-index:100}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.topbar-info{display:flex;gap:25px;flex-wrap:wrap}
+.topbar-info span i{color:var(--secondary);margin-left:6px}
+.topbar-social a{color:#fff;margin-left:12px;font-size:16px;transition:.3s}
+.topbar-social a:hover{color:var(--secondary);transform:translateY(-2px)}
+
+/* ===== Header ===== */
+header{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.08);position:sticky;top:0;z-index:99;transition:.3s}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:55px;height:55px;background:var(--gradient);border-radius:15px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.logo-icon::before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.3) 50%,transparent 70%);animation:shine 3s infinite}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.logo-text h1{font-size:22px;color:var(--primary-dark);font-weight:900}
+.logo-text p{font-size:12px;color:var(--gray);font-weight:600}
+nav ul{display:flex;list-style:none;gap:5px}
+nav a{color:var(--dark);text-decoration:none;font-weight:600;padding:10px 15px;border-radius:10px;transition:.3s;font-size:15px;position:relative}
+nav a:hover{color:var(--primary);background:rgba(8,145,178,.08)}
+.menu-btn{display:none;background:var(--primary);color:#fff;border:none;width:45px;height:45px;border-radius:10px;font-size:20px;cursor:pointer}
+
+.container{max-width:1280px;margin:0 auto;padding:0 20px}
+
+/* ===== Hero ===== */
+.hero{background:var(--gradient-hero);color:#fff;padding:100px 0 120px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80') center/cover;opacity:.15}
+.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80"><path fill="%23ffffff" d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"/></svg>');background-size:cover}
+.hero-content{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);padding:8px 18px;border-radius:50px;font-size:14px;margin-bottom:20px;border:1px solid rgba(255,255,255,.2)}
+.hero-badge i{color:var(--secondary)}
+.hero h2{font-size:52px;font-weight:900;line-height:1.2;margin-bottom:20px;text-shadow:0 4px 20px rgba(0,0,0,.2)}
+.hero h2 span{color:var(--secondary);position:relative;display:inline-block}
+.hero h2 span::after{content:'';position:absolute;bottom:5px;right:0;width:100%;height:8px;background:rgba(245,158,11,.3);border-radius:4px;z-index:-1}
+.hero p{font-size:18px;margin-bottom:30px;opacity:.95;max-width:550px}
+.hero-buttons{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:30px}
+.btn{padding:15px 35px;border-radius:50px;text-decoration:none;font-weight:700;transition:.4s;display:inline-flex;align-items:center;gap:10px;border:none;cursor:pointer;font-size:16px;font-family:inherit}
+.btn-primary{background:var(--gradient-gold);color:#fff;box-shadow:0 10px 30px rgba(245,158,11,.4)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(245,158,11,.6)}
+.btn-outline{background:rgba(255,255,255,.1);color:#fff;border:2px solid #fff;backdrop-filter:blur(10px)}
+.btn-outline:hover{background:#fff;color:var(--primary)}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+.stat-item{text-align:center}
+.stat-item .num{font-size:32px;font-weight:900;color:var(--secondary);display:block}
+.stat-item .lbl{font-size:13px;opacity:.9}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-img-wrap{width:100%;max-width:480px;aspect-ratio:1;border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4);position:relative;animation:float 4s ease-in-out infinite;border:5px solid rgba(255,255,255,.2)}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+.floating-icon{position:absolute;width:70px;height:70px;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 10px 30px rgba(0,0,0,.2);animation:float 3s ease-in-out infinite}
+.floating-icon:nth-child(2){top:5%;left:0;color:var(--primary);animation-delay:.5s}
+.floating-icon:nth-child(3){top:15%;right:-5%;color:var(--accent);animation-delay:1s}
+.floating-icon:nth-child(4){bottom:15%;left:5%;color:var(--secondary);animation-delay:1.5s}
+.floating-icon:nth-child(5){bottom:5%;right:0;color:#ec4899;animation-delay:2s}
+
+/* ===== Section Base ===== */
+section{padding:80px 0;position:relative}
+.section-title{text-align:center;margin-bottom:60px}
+.section-title .subtitle{color:var(--primary);font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:inline-block}
+.section-title h2{font-size:42px;font-weight:900;color:var(--dark);margin-bottom:15px;position:relative;display:inline-block}
+.section-title h2::after{content:'';position:absolute;bottom:-10px;right:50%;transform:translateX(50%);width:80px;height:4px;background:var(--gradient-gold);border-radius:2px}
+.section-title p{color:var(--gray);font-size:17px;max-width:700px;margin:20px auto 0}
+
+/* ===== Services ===== */
+.services{background:linear-gradient(180deg,#fff 0%,#f0f9ff 100%)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:25px}
+.service-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.4s;position:relative;border:1px solid #e2e8f0}
+.service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}
+.service-img{height:200px;overflow:hidden;position:relative}
+.service-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.service-card:hover .service-img img{transform:scale(1.1)}
+.service-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(8,145,178,.4) 100%)}
+.service-img .service-badge{position:absolute;top:15px;right:15px;background:var(--gradient-gold);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;z-index:2;box-shadow:0 5px 15px rgba(245,158,11,.4)}
+.service-body{padding:25px;text-align:center}
+.service-icon{width:70px;height:70px;background:var(--gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;margin:-60px auto 15px;border:4px solid #fff;box-shadow:0 10px 25px rgba(8,145,178,.3);position:relative;z-index:2}
+.service-body h3{font-size:20px;color:var(--dark);margin-bottom:12px;font-weight:800}
+.service-body p{color:var(--gray);font-size:14px;margin-bottom:15px}
+.service-body .more{color:var(--primary);font-weight:700;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:5px;transition:.3s}
+.service-body .more:hover{gap:10px;color:var(--secondary)}
+
+/* ===== Bugs Section ===== */
+.bugs{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+.bugs::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1585846416120-3a3f5a8eb5a3?w=1920&q=80') center/cover;opacity:.08}
+.bugs .section-title h2{color:#fff}
+.bugs .section-title p{color:rgba(255,255,255,.7)}
+.bugs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;position:relative;z-index:2}
+.bug-card{background:rgba(255,255,255,.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px 20px;text-align:center;transition:.4s;cursor:pointer;position:relative;overflow:hidden}
+.bug-card::before{content:'';position:absolute;top:0;right:0;width:100%;height:100%;background:var(--gradient);opacity:0;transition:.4s}
+.bug-card:hover{transform:translateY(-8px);border-color:var(--secondary)}
+.bug-card:hover::before{opacity:.15}
+.bug-card i{font-size:50px;color:var(--secondary);margin-bottom:15px;display:block;transition:.4s;position:relative;z-index:2}
+.bug-card:hover i{transform:scale(1.2) rotate(10deg)}
+.bug-card h4{font-size:18px;margin-bottom:8px;color:#fff;position:relative;z-index:2}
+.bug-card p{font-size:13px;color:rgba(255,255,255,.6);margin:0;position:relative;z-index:2}
+
+/* ===== Why Us ===== */
+.why-us{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.why-card{background:#fff;padding:35px 25px;border-radius:20px;box-shadow:var(--shadow);transition:.4s;position:relative;overflow:hidden}
+.why-card:hover{transform:translateY(-8px)}
+.why-card .num{position:absolute;top:20px;left:20px;font-size:60px;font-weight:900;color:rgba(8,145,178,.1);line-height:1}
+.why-card i{font-size:40px;color:var(--primary);margin-bottom:15px}
+.why-card h4{font-size:19px;color:var(--dark);margin-bottom:10px;font-weight:800}
+.why-card p{color:var(--gray);font-size:14px}
+
+/* ===== Stats ===== */
+.stats{background:var(--gradient);color:#fff;padding:70px 0;position:relative;overflow:hidden}
+.stats::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80') center/cover;opacity:.15}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;position:relative;z-index:2}
+.stat-box{text-align:center;padding:20px}
+.stat-box i{font-size:45px;color:var(--secondary);margin-bottom:15px}
+.stat-box .counter{font-size:48px;font-weight:900;display:block;margin-bottom:5px}
+.stat-box span{font-size:16px;opacity:.95}
+
+/* ===== Process ===== */
+.process{background:linear-gradient(180deg,#f8fafc 0%,#fff 100%)}
+.process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;position:relative}
+.process-step{text-align:center;position:relative;padding:30px 20px}
+.process-step .step-num{width:80px;height:80px;background:var(--gradient-gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900;margin:0 auto 20px;box-shadow:0 10px 30px rgba(245,158,11,.4);position:relative;z-index:2}
+.process-step h4{font-size:19px;color:var(--dark);margin-bottom:10px;font-weight:800}
+.process-step p{color:var(--gray);font-size:14px}
+
+/* ===== Articles ===== */
+.articles{background:#fff}
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
+.article-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.4s;border:1px solid #e2e8f0}
+.article-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}
+.article-img{height:220px;position:relative;overflow:hidden}
+.article-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.article-card:hover .article-img img{transform:scale(1.1)}
+.article-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.5) 100%)}
+.article-img .article-cat{position:absolute;top:15px;right:15px;background:var(--gradient-gold);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;z-index:2}
+.article-body{padding:25px}
+.article-meta{display:flex;gap:15px;font-size:13px;color:var(--gray);margin-bottom:12px}
+.article-meta span i{color:var(--primary);margin-left:5px}
+.article-body h3{font-size:20px;color:var(--dark);margin-bottom:12px;font-weight:800;line-height:1.4}
+.article-body p{color:var(--gray);font-size:14px;margin-bottom:15px}
+.article-body .read-more{color:var(--primary);font-weight:700;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:5px;transition:.3s}
+.article-body .read-more:hover{gap:10px;color:var(--secondary)}
+
+/* ===== Gallery ===== */
+.gallery{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.gallery-item{height:250px;border-radius:15px;overflow:hidden;position:relative;cursor:pointer;box-shadow:var(--shadow)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gallery-item:hover img{transform:scale(1.15)}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(8,145,178,.8) 100%);opacity:0;transition:.4s}
+.gallery-item:hover::after{opacity:1}
+.gallery-item .gallery-caption{position:absolute;bottom:20px;right:20px;color:#fff;font-weight:700;font-size:16px;z-index:2;transform:translateY(20px);opacity:0;transition:.4s}
+.gallery-item:hover .gallery-caption{transform:translateY(0);opacity:1}
+
+/* ===== Areas ===== */
+.areas{background:var(--dark);color:#fff}
+.areas .section-title h2{color:#fff}
+.areas .section-title p{color:rgba(255,255,255,.7)}
+.areas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.area-tag{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:18px;border-radius:12px;text-align:center;transition:.3s;cursor:pointer}
+.area-tag:hover{background:var(--primary);border-color:var(--primary);transform:translateY(-3px)}
+.area-tag i{color:var(--secondary);margin-left:8px}
+
+/* ===== FAQ ===== */
+.faq{background:#fff}
+.faq-container{max-width:850px;margin:0 auto}
+.faq-item{background:#f8fafc;border-radius:15px;margin-bottom:15px;overflow:hidden;border:1px solid #e2e8f0;transition:.3s}
+.faq-item.active{background:#fff;box-shadow:var(--shadow);border-color:var(--primary)}
+.faq-q{padding:20px 25px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--dark);font-size:17px;transition:.3s}
+.faq-q:hover{color:var(--primary)}
+.faq-q i{color:var(--primary);transition:.3s;font-size:14px}
+.faq-item.active .faq-q i{transform:rotate(180deg)}
+.faq-a{padding:0 25px;max-height:0;overflow:hidden;transition:.4s;color:var(--gray);font-size:15px;line-height:1.9}
+.faq-item.active .faq-a{padding:0 25px 25px;max-height:500px}
+
+/* ===== Testimonials ===== */
+.testimonials{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%)}
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.test-card{background:#fff;padding:30px;border-radius:20px;box-shadow:var(--shadow);position:relative;transition:.4s}
+.test-card:hover{transform:translateY(-5px)}
+.test-card::before{content:'"';position:absolute;top:10px;left:20px;font-size:100px;color:var(--primary);opacity:.15;font-family:serif;line-height:1}
+.test-stars{color:var(--secondary);margin-bottom:15px;font-size:16px}
+.test-card p{color:var(--gray);font-size:15px;margin-bottom:20px;font-style:italic}
+.test-author{display:flex;align-items:center;gap:15px}
+.test-avatar{width:55px;height:55px;background:var(--gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:20px}
+.test-author h5{color:var(--dark);font-size:16px;margin-bottom:3px}
+.test-author span{color:var(--gray);font-size:13px}
+
+/* ===== CTA ===== */
+.cta{background:var(--gradient-hero);color:#fff;padding:80px 0;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1920&q=80') center/cover;opacity:.2}
+.cta-content{position:relative;z-index:2}
+.cta h2{font-size:40px;font-weight:900;margin-bottom:20px}
+.cta p{font-size:18px;margin-bottom:30px;opacity:.95;max-width:600px;margin-right:auto;margin-left:auto}
+.cta .btn-primary{background:#fff;color:var(--primary);font-size:18px;padding:18px 45px}
+.cta .btn-primary:hover{background:var(--secondary);color:#fff}
+
+/* ===== Footer ===== */
+footer{background:#0a0f1c;color:#cbd5e1;padding:70px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:50px}
+.footer-col h4{color:#fff;font-size:18px;margin-bottom:20px;position:relative;padding-bottom:10px}
+.footer-col h4::after{content:'';position:absolute;bottom:0;right:0;width:40px;height:3px;background:var(--gradient-gold);border-radius:2px}
+.footer-col p{font-size:14px;line-height:1.9;margin-bottom:15px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul a{color:#cbd5e1;text-decoration:none;font-size:14px;transition:.3s;display:inline-flex;align-items:center;gap:8px}
+.footer-col ul a:hover{color:var(--secondary);padding-right:5px}
+.footer-col ul a i{color:var(--primary);font-size:12px}
+.footer-contact li{display:flex;gap:12px;align-items:flex-start;margin-bottom:15px;font-size:14px}
+.footer-contact li i{color:var(--secondary);font-size:18px;margin-top:3px}
+.footer-social{display:flex;gap:10px;margin-top:15px}
+.footer-social a{width:40px;height:40px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;transition:.3s;text-decoration:none}
+.footer-social a:hover{background:var(--primary);transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;text-align:center;font-size:14px}
+.footer-bottom span{color:var(--secondary);font-weight:700}
+
+/* ===== WhatsApp Float ===== */
+.whatsapp-float{position:fixed;bottom:30px;left:30px;width:65px;height:65px;background:#25d366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 10px 30px rgba(37,211,102,.5);z-index:999;text-decoration:none;animation:pulse 2s infinite;transition:.3s}
+.whatsapp-float:hover{transform:scale(1.1)}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.7)}50%{box-shadow:0 10px 30px rgba(37,211,102,.5),0 0 0 20px rgba(37,211,102,0)}}
+.call-float{position:fixed;bottom:110px;left:30px;width:60px;height:60px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 10px 30px rgba(8,145,178,.5);z-index:999;text-decoration:none;animation:pulse2 2s infinite}
+@keyframes pulse2{0%,100%{box-shadow:0 10px 30px rgba(8,145,178,.5),0 0 0 0 rgba(8,145,178,.7)}50%{box-shadow:0 10px 30px rgba(8,145,178,.5),0 0 0 20px rgba(8,145,178,0)}}
+
+/* ===== Responsive ===== */
+@media(max-width:992px){
+  .hero-content,.footer-grid{grid-template-columns:1fr}
+  .hero h2{font-size:38px}
+  .section-title h2{font-size:32px}
+  nav ul{display:none;position:absolute;top:100%;right:0;left:0;background:#fff;flex-direction:column;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+  nav ul.active{display:flex}
+  .menu-btn{display:block}
+  .hero-visual{display:none}
+}
+@media(max-width:600px){
+  .hero{padding:60px 0 80px}
+  .hero h2{font-size:30px}
+  .section-title h2{font-size:26px}
+  section{padding:60px 0}
+  .topbar-info{font-size:12px;gap:15px}
+  .cta h2{font-size:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span><i class="fas fa-phone"></i> 0549265055</span>
+      <span><i class="fas fa-map-marker-alt"></i> خميس مشيط - عسير</span>
+      <span><i class="fas fa-clock"></i> 24 ساعة - 7 أيام</span>
+    </div>
+    <div class="topbar-social">
+      <a href="https://wa.me/966549265055"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+      <div class="logo-text">
+        <h1>الأمل كلين</h1>
+        <p>للتنظيف ومكافحة الحشرات</p>
+      </div>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#bugs">مكافحة الحشرات</a></li>
+        <li><a href="#gallery">معرض الأعمال</a></li>
+        <li><a href="#articles">المقالات</a></li>
+        <li><a href="#faq">الأسئلة</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" onclick="document.getElementById('menu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge"><i class="fas fa-star"></i> الشركة الأولى بخميس مشيط منذ 2010</div>
+        <h2>نظافة تليق ببيتك <span>وجودة لا تُنسى</span></h2>
+        <p>شركة الأمل كلين الرائدة في مجال التنظيف الشامل ومكافحة جميع أنواع الحشرات بخميس مشيط ومنطقة عسير. نقدم خدمات احترافية بأحدث المعدات ومواد آمنة 100% على صحة عائلتك.</p>
+        <div class="hero-buttons">
+          <a href="tel:0549265055" class="btn btn-primary"><i class="fas fa-phone"></i> اتصل الآن</a>
+          <a href="https://wa.me/966549265055" class="btn btn-outline"><i class="fab fa-whatsapp"></i> واتساب</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="num">+15</span><span class="lbl">سنة خبرة</span></div>
+          <div class="stat-item"><span class="num">+5000</span><span class="lbl">عميل سعيد</span></div>
+          <div class="stat-item"><span class="num">100%</span><span class="lbl">ضمان الجودة</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="تنظيف احترافي">
+          <div class="floating-icon"><i class="fas fa-home"></i></div>
+          <div class="floating-icon"><i class="fas fa-bug"></i></div>
+          <div class="floating-icon"><i class="fas fa-couch"></i></div>
+          <div class="floating-icon"><i class="fas fa-droplet"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">خدماتنا المتميزة</span>
+      <h2>كل ما يحتاجه منزلك في مكان واحد</h2>
+      <p>نقدم باقة متكاملة من خدمات التنظيف والصيانة بأعلى معايير الجودة وأفضل الأسعار التنافسية في خميس مشيط</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-img">
+          <span class="service-badge">الأكثر طلباً</span>
+          <img src="https://taskty.com/Images/Offer/277e4285-a0b6-41ba-8ae2-60ea34ff6832.jfif" alt="تنظيف الشقق">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-building"></i></div>
+          <h3>تنظيف الشقق</h3>
+          <p>تنظيف شامل للشقق بجميع مساحاتها، من الجدران والأسقف إلى الأرضيات والزوايا، باستخدام أفضل المنظفات الآمنة.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <span class="service-badge">خدمة VIP</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT533vnPgLgosKybYr7JkACPwhrns4Yn5RH6Y7TRj0FsZjYWYDaFJrD9ctS&s=10" alt="تنظيف الفلل">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-house-chimney"></i></div>
+          <h3>تنظيف الفلل</h3>
+          <p>خدمات تنظيف احترافية للفلل والقصور الكبيرة، مع فريق متخصص يعمل بكفاءة لإنجاز العمل في وقت قياسي.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://3asfur.com/wp-content/uploads/2021/07/%D9%84%D8%AA%D8%A7%D8%A7%D8%A8%D8%AA.jpg" alt="تنظيف المنازل">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h3>تنظيف المنازل</h3>
+          <p>تنظيف دقيق للمنازل يشمل جميع الغرف والمطابخ والحمامات، مع تعقيم كامل باستخدام مواد معتمدة من وزارة الصحة.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://aljawharuh-clean.com/wp-content/uploads/2024/01/%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%85%D8%AC%D8%A7%D9%84%D8%B3-%D8%A8%D8%A7%D9%84%D8%AE%D8%B1%D8%AC-1-2.jpg" alt="تنظيف المجالس">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-couch"></i></div>
+          <h3>تنظيف المجالس</h3>
+          <p>غسيل وتنظيف المجالس العربية والغربية بالبخار، إزالة البقع الصعبة والتعطر بأجود أنواع العطور العربية.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://elrwad-clean.unaux.com/wp-content/uploads/2024/11/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%85%D8%AC%D8%A7%D9%84%D8%B3-%D9%81%D9%8A-%D8%AF%D8%A8%D9%8A%D8%A8.jpg" alt="تنظيف الكنب">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-sofa"></i></div>
+          <h3>تنظيف الكنب</h3>
+          <p>تنظيف كنب بالبخار والماء، إزالة البقع والأوساخ دون الإضرار بالقماش، مع الحفاظ على الألوان والزخارف.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://gama-est.com/wp-content/uploads/2022/09/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%BA%D8%B3%D9%84-%D8%A7%D9%84%D8%B3%D8%AC%D8%A7%D8%AF-%D8%A8%D8%B1%D8%A7%D8%B3-%D8%AA%D9%86%D9%88%D8%B1%D8%A9.jpg" alt="تنظيف السجاد">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-rug"></i></div>
+          <h3>تنظيف السجاد</h3>
+          <p>غسيل السجاد بأنواعه (عربي، تركي، إيراني، باكستاني) بمنظفات خاصة تحافظ على خيوطه وألوانه الزاهية.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhKn9ITDc8rtZwLtjDuHimD5mbiV1BS-iTwkxsHhq_w&s=10" alt="تنظيف الموكيت">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-border-all"></i></div>
+          <h3>تنظيف الموكيت</h3>
+          <p>غسيل الموكيت المثبت والأرضيات المفروشة بالموكيت، باستخدام ماكينات احترافية تعمل بالحقن والسحب.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6PVdVVNn73InxjH6Zk8zdZXnt-h7tn9L9s6bq1KdrcFWXV2hxANvlw4&s=10" alt="تنظيف الستائر والمرتبات">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-mattress-pillow"></i></div>
+          <h3>تنظيف الستائر والمرتبات</h3>
+          <p>تنظيف الستائر بأنواعها والمرتبات الطبية بالبخار الساخن لقتل البكتيريا وعث الغبار والأحماض.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <span class="service-badge">ضمان سنة</span>
+          <img src="data:image/jpeg;base64,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" alt="مكافحة الحشرات">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-bug-slash"></i></div>
+          <h3>مكافحة الحشرات</h3>
+          <p>القضاء التام على جميع أنواع الحشرات الزاحفة والطائرة بمبيدات آمنة ومعتمدة من الجهات المختصة.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://zamilco.com/blog/wp-content/uploads/2024/03/%D8%B4%D8%B1%D9%83%D9%87-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.jpg" alt="تنظيف الخزانات">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>تنظيف الخزانات</h3>
+          <p>غسيل وتعقيم خزانات المياه العلوية والأرضية بأحدث التقنيات، لضمان مياه نقية وصحية لعائلتك.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://almohandes-awazel.com/wp-content/uploads/2024/11/bg.webp" alt="عزل الخزانات">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>عزل الخزانات</h3>
+          <p>عزل خزانات المياه بمواد إيبوكسية وأسمنتية معتمدة، لمنع التسربات وحماية المياه من التلوث الخارجي.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://media.alnaharegypt.com/img/22/11/07/934893-16680984304119001.webp" alt="عزل الأسطح">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-house-crack"></i></div>
+          <h3>عزل الأسطح</h3>
+          <p>عزل أسطح المنازل والفلل حرارياً ومائياً بأفضل المواد (إيبوكسي، فوم، بيتومين) لضمان حماية كاملة.</p>
+          <a href="tel:0549265055" class="more">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bugs Section -->
+<section class="bugs" id="bugs">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle" style="color:var(--secondary)">مكافحة متخصصة</span>
+      <h2>نقضي على كل أنواع الحشرات</h2>
+      <p>فريقنا المتخصص مدرب على التعامل مع جميع أنواع الحشرات والقوارض بأحدث الطرق العلمية الآمنة</p>
+    </div>
+    <div class="bugs-grid">
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة العتة</h4><p>القضاء التام على عتة الملابس والأغذية</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة الصراصير</h4><p>إبادة الصراصير الصغيرة والكبار</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة البق</h4><p>القضاء على بق الفراش نهائياً</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة النمل</h4><p>القضاء على النمل الأبيض والأسود</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة البراغيث</h4><p>التخلص من البراغيث والقراد</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة الذباب</h4><p>مكافحة الذباب والناموس</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة الدبابير</h4><p>إزالة أعشاش الدبابير والنحل</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة العناكب</h4><p>التخلص من العناكب والعقارب</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة القوارض</h4><p>مكافحة الفئران والجرذان</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة الوزغ</h4><p>التخلص من الوزغ والسحالي</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة الثعابين</h4><p>القضاء على الثعابين بأمان</p></div>
+      <div class="bug-card"><i class="fas fa-bug"></i><h4>مكافحة النمل الأبيض</h4><p>حماية المنزل من الأرضة</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section class="why-us" id="why">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">لماذا تختارنا</span>
+      <h2>مميزات تجعلنا الخيار الأول</h2>
+      <p>نتميز عن غيرنا بالعديد من المزايا التي جعلتنا الشركة الأولى في خميس مشيط ومنطقة عسير</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><span class="num">01</span><i class="fas fa-medal"></i><h4>خبرة +15 سنة</h4><p>سنوات طويلة من الخبرة المتراكمة في مجال التنظيف ومكافحة الحشرات بخميس مشيط.</p></div>
+      <div class="why-card"><span class="num">02</span><i class="fas fa-users"></i><h4>فريق محترف</h4><p>عمالة مدربة على أعلى مستوى، حاصلون على شهادات تدريب معتمدة.</p></div>
+      <div class="why-card"><span class="num">03</span><i class="fas fa-flask"></i><h4>مواد آمنة</h4><p>نستخدم مواد تنظيف ومبيدات معتمدة من وزارة الصحة السعودية وآمنة على الأطفال.</p></div>
+      <div class="why-card"><span class="num">04</span><i class="fas fa-tools"></i><h4>أجهزة حديثة</h4><p>أحدث ماكينات التنظيف بالبخار والحقن والسحب المستوردة من أوروبا.</p></div>
+      <div class="why-card"><span class="num">05</span><i class="fas fa-hand-holding-dollar"></i><h4>أسعار تنافسية</h4><p>أفضل الأسعار في السوق مع عروض وخصومات مستمرة طوال العام.</p></div>
+      <div class="why-card"><span class="num">06</span><i class="fas fa-certificate"></i><h4>ضمان معتمد</h4><p>ضمان شامل على جميع خدماتنا يصل إلى سنة كاملة على مكافحة الحشرات.</p></div>
+      <div class="why-card"><span class="num">07</span><i class="fas fa-clock"></i><h4>خدمة 24 ساعة</h4><p>نعمل على مدار الساعة طوال أيام الأسبوع لتلبية احتياجاتك في أي وقت.</p></div>
+      <div class="why-card"><span class="num">08</span><i class="fas fa-bolt"></i><h4>سرعة الإنجاز</h4><p>نلتزم بالمواعيد وننجز العمل في الوقت المحدد دون أي تأخير.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-box"><i class="fas fa-users"></i><span class="counter">5000</span><span>عميل سعيد</span></div>
+      <div class="stat-box"><i class="fas fa-briefcase"></i><span class="counter">12000</span><span>مشروع منجز</span></div>
+      <div class="stat-box"><i class="fas fa-award"></i><span class="counter">15</span><span>سنة خبرة</span></div>
+      <div class="stat-box"><i class="fas fa-user-tie"></i><span class="counter">85</span><span>فني محترف</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">طريقة العمل</span>
+      <h2>كيف نعمل في الأمل كلين</h2>
+      <p>خطوات بسيطة ومنظمة لنضمن لك أفضل خدمة وأعلى جودة</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step"><div class="step-num">1</div><h4>التواصل والحجز</h4><p>اتصل بنا أو راسلنا عبر الواتساب لتحديد موعد الزيارة والمعاينة المجانية.</p></div>
+      <div class="process-step"><div class="step-num">2</div><h4>المعاينة المجانية</h4><p>فريقنا يزور موقعك لتقييم العمل وتحديد التكلفة بدقة بدون أي رسوم.</p></div>
+      <div class="process-step"><div class="step-num">3</div><h4>تنفيذ الخدمة</h4><p>يبدأ الفريق المتخصص العمل باستخدام أحدث المعدات والمواد الآمنة.</p></div>
+      <div class="process-step"><div class="step-num">4</div><h4>التسليم والضمان</h4><p>تسليم العمل مع شهادة ضمان وخدمة متابعة دورية لراحتك الكاملة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">معرض الأعمال</span>
+      <h2>من أعمالنا السابقة</h2>
+      <p>نماذج حقيقية من أعمالنا المنجزة لعملائنا الكرام في خميس مشيط ومنطقة عسير</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="تنظيف منازل">
+        <div class="gallery-caption">تنظيف منزل بالكامل</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_8kn0tAUDTLjOTs5hxmdpaIwI1N3tM_a4G4Ls4Wbrg&s=10" alt="تنظيف سجاد">
+        <div class="gallery-caption">غسيل سجاد بالبخار</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="تنظيف كنب">
+        <div class="gallery-caption">تنظيف كنب احترافي</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="تنظيف فلل">
+        <div class="gallery-caption">تنظيف فيلا فاخرة</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbhAq3nLgROSla-Ow17T7yOGAENiU7147Tz2F_s-kSA&s=10" alt="تنظيف مجالس">
+        <div class="gallery-caption">غسيل مجالس عربية</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEs4qN5oUGwXTCeMs7jN5Y71BHviw9WypxCkhgOZPuHg&s=10" alt="تنظيف خزانات">
+        <div class="gallery-caption">غسيل وتعقيم خزانات</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://zahret-elkhadamat.com/caracr/uploads/2022/03/%D8%B1%D8%B4-%D9%85%D8%A8%D9%8A%D8%AF%D8%A7%D8%AA.jpg" alt="مكافحة حشرات">
+        <div class="gallery-caption">رش مبيدات آمن</div>
+      </div>
+      <!-- <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80" alt="تنظيف مرتبات">
+        <div class="gallery-caption">تنظيف مرتبات بالبخار</div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- Articles -->
+<section class="articles" id="articles">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">مدونتنا</span>
+      <h2>مقالات ونصائح مفيدة</h2>
+      <p>نقدم لك مجموعة من المقالات والنصائح العملية للحفاظ على نظافة منزلك وصحة عائلتك</p>
+    </div>
+    <div class="articles-grid">
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">نظافة المنزل</span>
+          <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80" alt="تنظيف المنزل">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 20 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>دليلك الشامل لتنظيف المنزل بعمق في 10 خطوات</h3>
+          <p>تعرف على أفضل الطرق والخطوات العملية لتنظيف منزلك بشكل احترافي، من ترتيب الغرف إلى تعقيم الأسطح، مع نصائح الخبراء في شركة الأمل كلين للحصول على نتائج مبهرة تدوم طويلاً...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">مكافحة الحشرات</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGoEkIjLS59sVfdbeo4btJ1v1IYmwf9OQbqggRuvkDA&s=10" alt="الصراصير">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 18 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>كيف تتخلص من الصراصير نهائياً؟ حلول مجربة</h3>
+          <p>الصراصير من أكثر الحشرات إزعاجاً وخطراً على صحة الأسرة. في هذا المقال نستعرض أفضل الطرق المنزلية والاحترافية للقضاء عليها، مع نصائح للوقاية من عودتها مرة أخرى...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">تنظيف الأثاث</span>
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="تنظيف كنب">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 15 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>أهمية تنظيف الكنب والمجالس بالبخار</h3>
+          <p>الكنب والمجالس من أكثر قطع الأثاث تعرضاً للأوساخ والبقع. التنظيف بالبخار هو الحل الأمثل للقضاء على البكتيريا والجراثيم دون الإضرار بالقماش، تعرف على فوائده العديدة...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">الخزانات</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRka447aP5i7sfQbQ0EZ-H8qJqHYWK1yHpZ7l1WI2XRBxY9F_LHp0egnMUI&s=10" alt="خزان مياه">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 12 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>كم مرة يجب تنظيف خزان المياه؟ ولماذا؟</h3>
+          <p>خزان المياه هو المصدر الرئيسي لمياه الشرب والاستخدام اليومي، لذا يجب الاهتمام بتنظيفه وتعقيمه بشكل دوري. في هذا المقال نوضح المدة المثالية للتنظيف وأهميته الصحية...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">العزل</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsoCeSBrsKbEUYVc7oLK_lyklYSi0kbm9RVwvlAqPRG_tKr_SqI7ftAeW&s=10" alt="عزل أسطح">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 10 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>عزل الأسطح: أنواعه وأهميته لحماية منزلك</h3>
+          <p>عزل الأسطح من أهم عمليات الصيانة التي تحمي منزلك من التسربات والرطوبة والحرارة. تعرف على أنواع العزل المختلفة (الحراري، المائي، الصوتي) وأفضل المواد المستخدمة...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">السجاد</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbhAq3nLgROSla-Ow17T7yOGAENiU7147Tz2F_s-kSA&s=10" alt="سجاد">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 8 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>كيف تحافظ على سجادك لأطول فترة ممكنة؟</h3>
+          <p>السجاد من القطع الثمينة في المنزل، والعناية به تطيل عمره وتحافظ على ألوانه. نقدم لك نصائح ذهبية للعناية اليومية بالمواعيد المثالية للتنظيف الاحترافي...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">بق الفراش</span>
+          <img src="https://cleaninginuae.com/wp-content/uploads/2025/09/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%B5%D9%81%D9%88%D8%AA.jpg" alt="غرفة نوم">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 5 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>بق الفراش: أخطاره وطرق مكافحته الفعالة</h3>
+          <p>بق الفراش من أخطر الحشرات التي تصيب المنزل، ويتغذى على دم الإنسان. في هذا المقال نكشف لك علامات وجوده، أضراره الصحية، وأفضل الطرق للقضاء عليه نهائياً...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">الفلل</span>
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="فيلا">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 3 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>تنظيف الفلل الكبيرة: تحدياته وحلوله الاحترافية</h3>
+          <p>الفلل الكبيرة تحتاج إلى خطة تنظيف محكمة وفريق عمل منظم. نستعرض في هذا المقال التحديات التي تواجه تنظيف الفلل وكيف نتغلب عليها بأحدث التقنيات والمعدات...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-img">
+          <span class="article-cat">نصائح</span>
+          <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=600&q=80" alt="منظفات">
+        </div>
+        <div class="article-body">
+          <div class="article-meta"><span><i class="fas fa-calendar"></i> 1 سبتمبر 2026</span><span><i class="fas fa-user"></i> فريق الأمل</span></div>
+          <h3>أفضل مواد التنظيف الآمنة على الأطفال والحيوانات</h3>
+          <p>مع وجود الأطفال والحيوانات الأليفة في المنزل، يجب اختيار مواد تنظيف آمنة وصديقة للبيئة. نقدم لك قائمة بأفضل المنتجات الطبيعية والآمنة التي تحافظ على نظافة منزلك...</p>
+          <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Areas -->
+<section class="areas">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle" style="color:var(--secondary)">مناطق الخدمة</span>
+      <h2>نغطي جميع أحياء خميس مشيط</h2>
+      <p>نصل إليك أينما كنت في خميس مشيط وضواحيها، خدمة سريعة ومتميزة</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الجامعيين</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الموسى</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الرفائع</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الأمراء</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الشفا</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي البندقي</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي النسيم</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الضباب</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الرصراص</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الفيصلية</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الخالدية</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي التحلية</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي العزيزية</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الربوة</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الملك فهد</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الملك عبدالله</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي السلام</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي الموظفين</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي بني عمر</div>
+      <div class="area-tag"><i class="fas fa-location-dot"></i> حي المزروعية</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">الأسئلة الشائعة</span>
+      <h2>إجابات على استفساراتكم</h2>
+      <p>نجيب على أكثر الأسئلة التي يطرحها عملاؤنا الكرام</p>
+    </div>
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <div class="faq-q">ما هي أسعار خدمات التنظيف لديكم؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>أسعارنا تنافسية جداً وتختلف حسب حجم المكان ونوع الخدمة المطلوبة. نقدم معاينة مجانية لتحديد السعر النهائي بدقة، مع ضمان أفضل سعر في خميس مشيط. اتصل بنا على 0549265055 للحصول على عرض سعر مخصص.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">هل المبيدات التي تستخدمونها آمنة على الأطفال؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>نعم، نستخدم مبيدات معتمدة من وزارة الصحة السعودية وآمنة تماماً على صحة الأطفال والكبار والحيوانات الأليفة. جميع المواد المستخدمة حاصلة على شهادات جودة عالمية وخالية من الروائح النفاذة.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">كم تستغرق عملية تنظيف الشقة؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>تختلف المدة حسب مساحة الشقة ودرجة الاتساخ. في المتوسط، شقة متوسطة المساحة تستغرق من 4 إلى 6 ساعات، بينما الشقق الكبيرة قد تحتاج إلى 8 ساعات أو أكثر. نلتزم دائماً بالوقت المتفق عليه.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">هل تقدمون ضماناً على خدمات مكافحة الحشرات؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>بالتأكيد، نقدم ضماناً يصل إلى سنة كاملة على خدمات مكافحة الحشرات، مع زيارات متابعة دورية مجاناً. في حال عودة أي حشرة خلال فترة الضمان، نعود فوراً للقضاء عليها بدون أي رسوم إضافية.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">ما هي طرق الدفع المتاحة لديكم؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>نقبل الدفع نقداً، التحويل البنكي، مدى، فيزا، ماستركارد، وآبل باي. كما نوفر خدمة الدفع الآجل للعملاء الدائمين والشركات بعقود شهرية وسنوية.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">هل يمكنني حجز خدمة في نفس اليوم؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>نعم، نوفر خدمة الحجز السريع في نفس اليوم في معظم الحالات، حسب توفر الفريق. ننصح بالحجز مسبقاً لضمان الحصول على الموعد المناسب لك، خاصة في مواسم الذروة.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">ما الفرق بين تنظيف الخزانات وعزلها؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>تنظيف الخزانات يعني تفريغها وغسلها وتعقيمها من الداخل لإزالة الرواسب والبكتيريا. أما العزل فهو حماية الخزان من التسربات الخارجية والداخلية باستخدام مواد عازلة متخصصة. ننصح بعملهما معاً لضمان مياه نقية وآمنة.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">هل تعملون في أيام العطل والأعياد؟ <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>نعم، نعمل على مدار الساعة طوال أيام الأسبوع بما في ذلك العطل الرسمية والأعياد ورمضان. خدمة 24/7 لراحتك ولتلبية احتياجاتك الطارئة في أي وقت.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">آراء عملائنا</span>
+      <h2>ماذا يقول عنا عملاؤنا</h2>
+      <p>ثقة عملائنا هي أكبر شهادة على جودة خدماتنا</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>خدمة ممتازة وفريق عمل محترم جداً. نظفوا الفيلا بالكامل في يوم واحد والنتيجة مبهرة. أنصح الجميع بالتعامل مع شركة الأمل كلين.</p>
+        <div class="test-author"><div class="test-avatar">أ</div><div><h5>أبو محمد</h5><span>حي الجامعيين</span></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>كنت أعاني من الصراصير منذ أشهر، اتصلت بالأمل كلين وقضوا عليها نهائياً في زيارة واحدة. أسعارهم معقولة والضمان ممتاز.</p>
+        <div class="test-author"><div class="test-avatar">ف</div><div><h5>فاطمة أحمد</h5><span>حي الموسى</span></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>نظفوا السجاد والمجالس بالبخار وأصبحت كأنها جديدة. فريق منظم ودقيق في عمله، شكراً لشركة الأمل كلين على الخدمة الرائعة.</p>
+        <div class="test-author"><div class="test-avatar">خ</div><div><h5>خالد الشهري</h5><span>حي الرفائع</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="container cta-content">
+    <h2>جاهزون لخدمتك الآن</h2>
+    <p>احصل على معاينة مجانية وعرض سعر خاص. فريقنا في انتظارك على مدار الساعة لتلبية جميع احتياجاتك</p>
+    <a href="tel:0549265055" class="btn btn-primary"><i class="fas fa-phone"></i> اتصل بنا: 0549265055</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:20px">
+          <div class="logo-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+          <div class="logo-text">
+            <h1 style="color:#fff">الأمل كلين</h1>
+            <p style="color:#cbd5e1">للتنظيف ومكافحة الحشرات</p>
+          </div>
+        </div>
+        <p>شركة الأمل كلين الرائدة في مجال التنظيف الشامل ومكافحة الحشرات بخميس مشيط ومنطقة عسير. نقدم خدمات احترافية بأعلى معايير الجودة منذ أكثر من 15 عاماً.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/966549265055"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#home"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+          <li><a href="#bugs"><i class="fas fa-angle-left"></i> مكافحة الحشرات</a></li>
+          <li><a href="#gallery"><i class="fas fa-angle-left"></i> معرض الأعمال</a></li>
+          <li><a href="#articles"><i class="fas fa-angle-left"></i> المقالات</a></li>
+          <li><a href="#faq"><i class="fas fa-angle-left"></i> الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <ul>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> تنظيف شقق</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> تنظيف فلل</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> تنظيف مجالس</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> تنظيف خزانات</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> عزل أسطح</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> مكافحة حشرات</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-phone"></i><div><strong>الهاتف / واتساب</strong><br>0549265055</div></li>
+          <li><i class="fas fa-map-marker-alt"></i><div><strong>العنوان</strong><br>خميس مشيط - منطقة عسير</div></li>
+          <li><i class="fas fa-clock"></i><div><strong>ساعات العمل</strong><br>24 ساعة - 7 أيام</div></li>
+          <li><i class="fas fa-envelope"></i><div><strong>البريد الإلكتروني</strong><br>info@alamal-clean.com</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      جميع الحقوق محفوظة © 2026 <span>الأمل كلين</span> | تصميم وتطوير بأعلى معايير الجودة
+    </div>
+  </div>
+</footer>
+
+<!-- Float Buttons -->
+<a href="https://wa.me/966549265055" class="whatsapp-float" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:0549265055" class="call-float" title="اتصل بنا"><i class="fas fa-phone"></i></a>
+
+<script>
+// FAQ Toggle
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const isActive=item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));
+    if(!isActive) item.classList.add('active');
+  });
+});
+
+// Counter Animation
+const counters=document.querySelectorAll('.counter');
+const animateCounter=(el)=>{
+  const target=+el.innerText.replace(/\D/g,'');
+  const duration=2000;
+  const step=target/(duration/16);
+  let current=0;
+  const timer=setInterval(()=>{
+    current+=step;
+    if(current>=target){el.innerText=target.toLocaleString('ar-EG');clearInterval(timer)}
+    else el.innerText=Math.floor(current).toLocaleString('ar-EG');
+  },16);
+};
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){animateCounter(e.target);observer.unobserve(e.target)}
+  });
+});
+counters.forEach(c=>observer.observe(c));
+
+// Header scroll
+window.addEventListener('scroll',()=>{
+  const h=document.querySelector('header');
+  h.style.boxShadow=window.scrollY>50?'0 5px 30px rgba(0,0,0,.1)':'0 2px 20px rgba(0,0,0,.08)';
+});
+</script>
+
+</body>
+</html>
